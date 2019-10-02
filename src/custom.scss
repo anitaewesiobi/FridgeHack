@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+$hFont:'PT Serif', serif;
+$pFont: 'Fira Sans', sans-serif;
+$boxShadow: 0 0 20px 7px rgba(0,0,0, 0.2);
+$fcolor: rgb(22, 33, 98);
+@mixin button {
+    border-radius: 30px;
+    color: white;
+    background-color:rgb(145, 31, 31)
+}
+
+@mixin bgCenter() {
+    background-size: cover;
+    background-position: center;
+}
+
+.Header{ 
+
+    img {
+    position: relative;
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+    opacity: 0.7;
+    z-index:  -99;
+    }
+
+    .header-title p {
+        margin-top:-300px;
+        font-weight: 700;
+        font-family: $hFont;
+        color: $fcolor;
+        font-size: 60px;
+    }
+    .header-text p {
+        margin-top:-200px;
+        font-weight: 500;
+        font-family: $pFont;
+        color: $fcolor;
+        font-size: 30px;
+    }
+}
+a:hover,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.form-text {
+    font-family: $pFont;
+    color: $fcolor;
+    margin: 10px;
+    font-weight: 800;
+}
+.search-form {
+    padding: 30px 60px;
+    margin-top: -40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 7px rgba(0,0,0, 0.2);
+    width: 100%;
+}
+.search-bar {
+    border-radius: 25px;
+    width: 400px;
+    height: 45px;
+    padding-left:20px;
+
+}
+ .search-button {
+    margin-left: 15px;
+    width: 200px;
+    border-radius: 25px;
+    height: 50px;
+    background-color: rgb(248, 92, 68);
+}
+.recipe-button{
+    background-color: rgb(248, 92, 68);
+    border-radius: 5px;
+    padding: 10px;
+    color: $fcolor;
+    font-size: 12px;
+}
+
+.recipe-row .card-title {
+    font-family: $hFont;
+    font-size: 25px;
+    font-weight:600;
+    color:$fcolor;
+}
+
+.recipe-row .card-text {
+    font-family: $pFont;
+    font-weight: 400;
+    color:$fcolor;
+    font-size: 12px;
+}
+
+.recipe-row .chefImg {
+    width: 15px;
+    height: auto;
+    margin-top:-5px;
+    margin-right: 1px;
+}
+.fa-clock {
+    font-size: 15px;
+    margin-right: 1px;
+}
+
+
